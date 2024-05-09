@@ -3,7 +3,8 @@ using Task = AspCore_Api1.Models.Task;
 
 namespace AspCore_Api1.Controllers
 {
-    public class TaskController : Controller
+    [Route("NashTech/Rookies")]
+    public class TaskController : ControllerBase
     {
         private static List<Task> tasks = new List<Task>()
         {
